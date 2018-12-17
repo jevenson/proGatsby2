@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: 'Gatsby Default Starter',
-    description: 'A new bloggo'
+    description: 'A new bloggo',
+    siteUrl: 'https://progatsby2.com'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -33,13 +34,14 @@ module.exports = {
         icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
       },
     },
+    'gatsby-plugin-sitemap',
     'gatsby-transformer-remark',
     'gatsby-plugin-styled-components',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
-    'gatsby-plugin-netlify' // THIS MUST BE LAST
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
+    'gatsby-plugin-offline',
+    'gatsby-plugin-netlify' // THIS MUST BE LAST
   ],
 }
